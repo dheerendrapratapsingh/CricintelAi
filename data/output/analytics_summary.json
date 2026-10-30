@@ -1,0 +1,39 @@
+{
+  "corpus_total_articles": 39,
+  "total_story_clusters": 7,
+  "unique_sources": [
+    "BBC Sport",
+    "Cricbuzz",
+    "ESPNcricinfo",
+    "Reuters Cricket",
+    "The Guardian",
+    "The Indian Express",
+    "The Sydney Morning Herald",
+    "Wisden"
+  ],
+  "tournament_distribution": {
+    "ICC Men's T20 World Cup": 6,
+    "Indian Premier League": 6,
+    "The Ashes": 6,
+    "ICC Champions Trophy": 6,
+    "Border-Gavaskar Trophy": 5,
+    "Bilateral Series": 5,
+    "ICC World Test Championship": 4,
+    "International": 1
+  },
+  "top_player_mentions": {
+    "Rohit Sharma": 14,
+    "Jasprit Bumrah": 11,
+    "Pat Cummins": 7,
+    "Gautam Gambhir": 7,
+    "Ajit Agarkar": 5,
+    "Hardik Pandya": 5,
+    "Virat Kohli": 5,
+    "Ben Stokes": 5,
+    "Joe Root": 5,
+    "Mohsin Naqvi": 5,
+    "Rishabh Pant": 4,
+    "Suryakumar Yadav": 4
+  },
+  "average_compression_ratio_pct": 65.5
+}

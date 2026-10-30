@@ -1,0 +1,8 @@
+{
+  "algorithm": "Agglomerative Hierarchical (Cosine Distance)",
+  "num_clusters": 7,
+  "silhouette_score": 0.0448,
+  "davies_bouldin_index": 2.813,
+  "calinski_harabasz_index": 1.34,
+  "total_articles_evaluated": 39
+}

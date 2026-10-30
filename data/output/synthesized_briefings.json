@@ -1,0 +1,1032 @@
+[
+  {
+    "cluster_id": 0,
+    "cluster_title": "ICC Men's T20 World Cup \u2014 World India (Rohit Sharma, Gautam Gambhir)",
+    "article_count": 13,
+    "summary_text": "Addressing a packed press conference at the BCCI headquarters in Mumbai, chief selector Ajit Agarkar and skipper Rohit Sharma laid out their tactical vision for the T20 World Cup. India has adopted a spin-heavy blueprint for the T20 World Cup, selecting wrist-spin pair Kuldeep Yadav and Yuzvendra Chahal alongside finger spinners Ravindra Jadeja and Axar Patel. Five-time champions Mumbai Indians have put to rest months of intense speculation by confirming their retention list, successfully retaining Hardik Pandya, Rohit Sharma, Jasprit Bumrah, Suryakumar Yadav, and Tilak Varma. Head coach Gautam Gambhir and captain Rohit Sharma agreed that Bumrah will be selectively rested during home white-ball assignments to ensure he peaks during marquee red-ball contests and ICC tournaments.",
+    "bullet_takeaways": [
+      "Addressing a packed press conference at the BCCI headquarters in Mumbai, chief selector Ajit Agarkar and skipper Rohit Sharma laid out their tactical vision for the T20 World Cup.",
+      "India has adopted a spin-heavy blueprint for the T20 World Cup, selecting wrist-spin pair Kuldeep Yadav and Yuzvendra Chahal alongside finger spinners Ravindra Jadeja and Axar Patel.",
+      "Five-time champions Mumbai Indians have put to rest months of intense speculation by confirming their retention list, successfully retaining Hardik Pandya, Rohit Sharma, Jasprit Bumrah, Suryakumar Yadav, and Tilak Varma.",
+      "Head coach Gautam Gambhir and captain Rohit Sharma agreed that Bumrah will be selectively rested during home white-ball assignments to ensure he peaks during marquee red-ball contests and ICC tournaments."
+    ],
+    "method_used": "Extractive MMR (Maximal Marginal Relevance)",
+    "fallback_used": false,
+    "original_word_count": 1009,
+    "summary_word_count": 116,
+    "compression_ratio_pct": 88.5,
+    "unique_sources": [
+      "BBC Sport",
+      "Cricbuzz",
+      "ESPNcricinfo",
+      "Reuters Cricket",
+      "The Indian Express",
+      "Wisden"
+    ],
+    "citations": [
+      {
+        "id": "art_001",
+        "title": "India announce 15-man squad for T20 World Cup: Rohit to lead, Hardik named deputy",
+        "source": "ESPNcricinfo",
+        "author": "Shashank Kishore",
+        "url": "https://www.espncricinfo.com/story/india-t20-world-cup-squad-rohit-hardik-1428901",
+        "published_at": "2025-05-01T11:30:00Z"
+      },
+      {
+        "id": "art_002",
+        "title": "Rinku Singh relegated to reserves as India finalize T20 World Cup 15",
+        "source": "Cricbuzz",
+        "author": "Vijay Tagore",
+        "url": "https://www.cricbuzz.com/cricket-news/130145/rinku-singh-reserves-india-t20-world-cup-squad",
+        "published_at": "2025-05-01T12:15:00Z"
+      },
+      {
+        "id": "art_003",
+        "title": "Agarkar clarifies Rohit Sharma's leadership and Pant's glovework role for World Cup",
+        "source": "The Indian Express",
+        "author": "Devendra Pandey",
+        "url": "https://indianexpress.com/article/sports/cricket/agarkar-press-conference-t20-world-cup-squad-pant-rohit-9304121/",
+        "published_at": "2025-05-01T14:45:00Z"
+      },
+      {
+        "id": "art_004",
+        "title": "BCCI reveals 4 spinners strategy for T20 World Cup pitches in West Indies and USA",
+        "source": "BBC Sport",
+        "author": "Stephan Shemilt",
+        "url": "https://www.bbc.com/sport/cricket/articles/c045129841",
+        "published_at": "2025-05-01T16:00:00Z"
+      },
+      {
+        "id": "art_005",
+        "title": "World Cup Squad Analysis: Can India's seasoned veterans end the ICC trophy drought?",
+        "source": "Wisden",
+        "author": "Katya Witney",
+        "url": "https://www.wisden.com/stories/india-t20-world-cup-squad-analysis-trophy-drought",
+        "published_at": "2025-05-02T08:20:00Z"
+      },
+      {
+        "id": "art_006",
+        "title": "Social media reacts as Chahal and Samson make World Cup cut while Gill misses out",
+        "source": "Reuters Cricket",
+        "author": "Amlan Chakraborty",
+        "url": "https://www.reuters.com/sports/cricket/t20-world-cup-india-selection-reaction-2025-05-01/",
+        "published_at": "2025-05-02T09:10:00Z"
+      },
+      {
+        "id": "art_010",
+        "title": "Mumbai Indians confirm retention core: Hardik, Rohit, Bumrah and Surya locked in",
+        "source": "BBC Sport",
+        "author": "Matthew Henry",
+        "url": "https://www.bbc.com/sport/cricket/articles/c98712345",
+        "published_at": "2025-10-31T18:45:00Z"
+      },
+      {
+        "id": "art_021",
+        "title": "Workload blueprint: How India plan to preserve Jasprit Bumrah across multi-format calendar",
+        "source": "Cricbuzz",
+        "author": "Ganesh Chandrasekaran",
+        "url": "https://www.cricbuzz.com/cricket-news/131102/bumrah-workload-management-plan-bcci",
+        "published_at": "2025-08-22T08:00:00Z"
+      },
+      {
+        "id": "art_035",
+        "title": "Gautam Gambhir outlines aggressive tactical philosophy in first press conference as India coach",
+        "source": "The Indian Express",
+        "author": "Sandeep Dwivedi",
+        "url": "https://indianexpress.com/article/sports/cricket/gautam-gambhir-press-conference-india-head-coach-vision-9465218/",
+        "published_at": "2025-07-22T11:00:00Z"
+      },
+      {
+        "id": "art_036",
+        "title": "Gambhir backs multi-format adaptability: 'Modern cricketers must master all conditions'",
+        "source": "ESPNcricinfo",
+        "author": "Sidharth Monga",
+        "url": "https://www.espncricinfo.com/story/gautam-gambhir-multi-format-cricket-philosophy-india-1434190",
+        "published_at": "2025-07-22T14:30:00Z"
+      },
+      {
+        "id": "art_037",
+        "title": "Abhishek Nayar and Ryan ten Doeschate join Gambhir's backroom staff for India tour",
+        "source": "Cricbuzz",
+        "author": "BCCI Beat Reporter",
+        "url": "https://www.cricbuzz.com/cricket-news/131010/gambhir-coaching-staff-nayar-ten-doeschate-morkel",
+        "published_at": "2025-07-23T09:15:00Z"
+      },
+      {
+        "id": "art_038",
+        "title": "Inside Gautam Gambhir's first dressing room meeting: Clarity, courage, and no room for complacency",
+        "source": "BBC Sport",
+        "author": "Matthew Henry",
+        "url": "https://www.bbc.com/sport/cricket/articles/c23456789",
+        "published_at": "2025-07-25T16:20:00Z"
+      },
+      {
+        "id": "art_039",
+        "title": "Tactical evolution: How Gambhir's spin depth strategy mirrors his successful IPL tenures",
+        "source": "Wisden",
+        "author": "Luffman James",
+        "url": "https://www.wisden.com/stories/gambhir-tactical-evolution-spin-depth-ipl-india",
+        "published_at": "2025-07-26T10:40:00Z"
+      }
+    ],
+    "timeline": [
+      {
+        "published_at": "2025-05-01T11:30:00Z",
+        "source": "ESPNcricinfo",
+        "title": "India announce 15-man squad for T20 World Cup: Rohit to lead, Hardik named deputy",
+        "url": "https://www.espncricinfo.com/story/india-t20-world-cup-squad-rohit-hardik-1428901"
+      },
+      {
+        "published_at": "2025-05-01T12:15:00Z",
+        "source": "Cricbuzz",
+        "title": "Rinku Singh relegated to reserves as India finalize T20 World Cup 15",
+        "url": "https://www.cricbuzz.com/cricket-news/130145/rinku-singh-reserves-india-t20-world-cup-squad"
+      },
+      {
+        "published_at": "2025-05-01T14:45:00Z",
+        "source": "The Indian Express",
+        "title": "Agarkar clarifies Rohit Sharma's leadership and Pant's glovework role for World Cup",
+        "url": "https://indianexpress.com/article/sports/cricket/agarkar-press-conference-t20-world-cup-squad-pant-rohit-9304121/"
+      },
+      {
+        "published_at": "2025-05-01T16:00:00Z",
+        "source": "BBC Sport",
+        "title": "BCCI reveals 4 spinners strategy for T20 World Cup pitches in West Indies and USA",
+        "url": "https://www.bbc.com/sport/cricket/articles/c045129841"
+      },
+      {
+        "published_at": "2025-05-02T08:20:00Z",
+        "source": "Wisden",
+        "title": "World Cup Squad Analysis: Can India's seasoned veterans end the ICC trophy drought?",
+        "url": "https://www.wisden.com/stories/india-t20-world-cup-squad-analysis-trophy-drought"
+      },
+      {
+        "published_at": "2025-05-02T09:10:00Z",
+        "source": "Reuters Cricket",
+        "title": "Social media reacts as Chahal and Samson make World Cup cut while Gill misses out",
+        "url": "https://www.reuters.com/sports/cricket/t20-world-cup-india-selection-reaction-2025-05-01/"
+      },
+      {
+        "published_at": "2025-07-22T11:00:00Z",
+        "source": "The Indian Express",
+        "title": "Gautam Gambhir outlines aggressive tactical philosophy in first press conference as India coach",
+        "url": "https://indianexpress.com/article/sports/cricket/gautam-gambhir-press-conference-india-head-coach-vision-9465218/"
+      },
+      {
+        "published_at": "2025-07-22T14:30:00Z",
+        "source": "ESPNcricinfo",
+        "title": "Gambhir backs multi-format adaptability: 'Modern cricketers must master all conditions'",
+        "url": "https://www.espncricinfo.com/story/gautam-gambhir-multi-format-cricket-philosophy-india-1434190"
+      },
+      {
+        "published_at": "2025-07-23T09:15:00Z",
+        "source": "Cricbuzz",
+        "title": "Abhishek Nayar and Ryan ten Doeschate join Gambhir's backroom staff for India tour",
+        "url": "https://www.cricbuzz.com/cricket-news/131010/gambhir-coaching-staff-nayar-ten-doeschate-morkel"
+      },
+      {
+        "published_at": "2025-07-25T16:20:00Z",
+        "source": "BBC Sport",
+        "title": "Inside Gautam Gambhir's first dressing room meeting: Clarity, courage, and no room for complacency",
+        "url": "https://www.bbc.com/sport/cricket/articles/c23456789"
+      },
+      {
+        "published_at": "2025-07-26T10:40:00Z",
+        "source": "Wisden",
+        "title": "Tactical evolution: How Gambhir's spin depth strategy mirrors his successful IPL tenures",
+        "url": "https://www.wisden.com/stories/gambhir-tactical-evolution-spin-depth-ipl-india"
+      },
+      {
+        "published_at": "2025-08-22T08:00:00Z",
+        "source": "Cricbuzz",
+        "title": "Workload blueprint: How India plan to preserve Jasprit Bumrah across multi-format calendar",
+        "url": "https://www.cricbuzz.com/cricket-news/131102/bumrah-workload-management-plan-bcci"
+      },
+      {
+        "published_at": "2025-10-31T18:45:00Z",
+        "source": "BBC Sport",
+        "title": "Mumbai Indians confirm retention core: Hardik, Rohit, Bumrah and Surya locked in",
+        "url": "https://www.bbc.com/sport/cricket/articles/c98712345"
+      }
+    ],
+    "players_involved": [
+      "Abhishek Nayar",
+      "Ajit Agarkar",
+      "Arshdeep Singh",
+      "Axar Patel",
+      "Gautam Gambhir",
+      "Hardik Pandya",
+      "Jasprit Bumrah",
+      "Kuldeep Yadav",
+      "Mohammed Siraj",
+      "Morne Morkel",
+      "Rahul Dravid",
+      "Ravindra Jadeja",
+      "Rinku Singh",
+      "Rishabh Pant",
+      "Rohit Sharma",
+      "Ryan ten Doeschate",
+      "Sanju Samson",
+      "Shivam Dube",
+      "Shubman Gill",
+      "Sunil Gavaskar",
+      "Suryakumar Yadav",
+      "Virat Kohli",
+      "Washington Sundar",
+      "Yashasvi Jaiswal",
+      "Yuzvendra Chahal"
+    ],
+    "teams_involved": [
+      "India",
+      "Kolkata Knight Riders",
+      "Lucknow Super Giants",
+      "Mumbai Indians",
+      "Sri Lanka",
+      "USA",
+      "West Indies"
+    ],
+    "provenance": [
+      {
+        "sentence": "Addressing a packed press conference at the BCCI headquarters in Mumbai, chief selector Ajit Agarkar and skipper Rohit Sharma laid out their tactical vision for the T20 World Cup.",
+        "source": "The Indian Express",
+        "headline": "Agarkar clarifies Rohit Sharma's leadership and Pant's glovework role for World Cup"
+      },
+      {
+        "sentence": "India has adopted a spin-heavy blueprint for the T20 World Cup, selecting wrist-spin pair Kuldeep Yadav and Yuzvendra Chahal alongside finger spinners Ravindra Jadeja and Axar Patel.",
+        "source": "BBC Sport",
+        "headline": "BCCI reveals 4 spinners strategy for T20 World Cup pitches in West Indies and USA"
+      },
+      {
+        "sentence": "Five-time champions Mumbai Indians have put to rest months of intense speculation by confirming their retention list, successfully retaining Hardik Pandya, Rohit Sharma, Jasprit Bumrah, Suryakumar Yadav, and Tilak Varma.",
+        "source": "BBC Sport",
+        "headline": "Mumbai Indians confirm retention core: Hardik, Rohit, Bumrah and Surya locked in"
+      },
+      {
+        "sentence": "Head coach Gautam Gambhir and captain Rohit Sharma agreed that Bumrah will be selectively rested during home white-ball assignments to ensure he peaks during marquee red-ball contests and ICC tournaments.",
+        "source": "Cricbuzz",
+        "headline": "Workload blueprint: How India plan to preserve Jasprit Bumrah across multi-format calendar"
+      }
+    ]
+  },
+  {
+    "cluster_id": 1,
+    "cluster_title": "ICC World Test Championship \u2014 Retain World (Joe Root, Pat Cummins)",
+    "article_count": 6,
+    "summary_text": "At just 22 years of age, Jaiswal becomes one of the youngest players in cricket history to breach the 800-rating points milestone in Test cricket. England maestro Joe Root has returned to the summit of the ICC Test Batting Rankings following his twin centuries at Lord's against Sri Lanka. India's bowling supremacy in red-ball cricket was underscored once again in the weekly ICC ranking update. With every World Test Championship series carrying intense context, batters like Yashasvi Jaiswal and Joe Root receive rating boosts for match-winning centuries scored under pressure.",
+    "bullet_takeaways": [
+      "At just 22 years of age, Jaiswal becomes one of the youngest players in cricket history to breach the 800-rating points milestone in Test cricket.",
+      "England maestro Joe Root has returned to the summit of the ICC Test Batting Rankings following his twin centuries at Lord's against Sri Lanka.",
+      "India's bowling supremacy in red-ball cricket was underscored once again in the weekly ICC ranking update.",
+      "With every World Test Championship series carrying intense context, batters like Yashasvi Jaiswal and Joe Root receive rating boosts for match-winning centuries scored under pressure."
+    ],
+    "method_used": "Extractive MMR (Maximal Marginal Relevance)",
+    "fallback_used": false,
+    "original_word_count": 422,
+    "summary_word_count": 90,
+    "compression_ratio_pct": 78.7,
+    "unique_sources": [
+      "BBC Sport",
+      "Cricbuzz",
+      "ESPNcricinfo",
+      "Reuters Cricket",
+      "The Indian Express"
+    ],
+    "citations": [
+      {
+        "id": "art_015",
+        "title": "Pat Cummins reflects on thrilling 2-2 Ashes series: 'Proud to retain the urn'",
+        "source": "Reuters Cricket",
+        "author": "Ian Ransom",
+        "url": "https://www.reuters.com/sports/cricket/cummins-ashes-post-match-oval-presser-2025-07-31/",
+        "published_at": "2025-07-31T19:30:00Z"
+      },
+      {
+        "id": "art_030",
+        "title": "Yashasvi Jaiswal surges to career-best ICC Test ranking following record double tons",
+        "source": "ESPNcricinfo",
+        "author": "Sudarshanan S",
+        "url": "https://www.espncricinfo.com/story/yashasvi-jaiswal-icc-test-batting-rankings-surge-1437102",
+        "published_at": "2025-03-12T08:00:00Z"
+      },
+      {
+        "id": "art_031",
+        "title": "Joe Root reclaims World No. 1 Test batter crown with masterclass against Sri Lanka",
+        "source": "BBC Sport",
+        "author": "Stephan Shemilt",
+        "url": "https://www.bbc.com/sport/cricket/articles/c45678901",
+        "published_at": "2025-09-04T12:00:00Z"
+      },
+      {
+        "id": "art_032",
+        "title": "Jasprit Bumrah and Ravichandran Ashwin retain top bowling spots in ICC Test charts",
+        "source": "The Indian Express",
+        "author": "Sports Desk",
+        "url": "https://indianexpress.com/article/sports/cricket/icc-rankings-bumrah-ashwin-top-bowlers-test-9562100/",
+        "published_at": "2025-09-04T15:30:00Z"
+      },
+      {
+        "id": "art_033",
+        "title": "Gus Atkinson and Kamran Ghulam voted ICC Players of the Month after breakout campaigns",
+        "source": "Reuters Cricket",
+        "author": "Amlan Chakraborty",
+        "url": "https://www.reuters.com/sports/cricket/icc-player-of-the-month-awards-atkinson-ghulam-2025-09-15/",
+        "published_at": "2025-09-15T11:45:00Z"
+      },
+      {
+        "id": "art_034",
+        "title": "ICC Rankings breakdown: How World Test Championship points shape player ratings",
+        "source": "Cricbuzz",
+        "author": "Deepu Narayanan",
+        "url": "https://www.cricbuzz.com/cricket-news/131490/icc-rankings-system-wtc-points-breakdown",
+        "published_at": "2025-09-18T10:00:00Z"
+      }
+    ],
+    "timeline": [
+      {
+        "published_at": "2025-03-12T08:00:00Z",
+        "source": "ESPNcricinfo",
+        "title": "Yashasvi Jaiswal surges to career-best ICC Test ranking following record double tons",
+        "url": "https://www.espncricinfo.com/story/yashasvi-jaiswal-icc-test-batting-rankings-surge-1437102"
+      },
+      {
+        "published_at": "2025-07-31T19:30:00Z",
+        "source": "Reuters Cricket",
+        "title": "Pat Cummins reflects on thrilling 2-2 Ashes series: 'Proud to retain the urn'",
+        "url": "https://www.reuters.com/sports/cricket/cummins-ashes-post-match-oval-presser-2025-07-31/"
+      },
+      {
+        "published_at": "2025-09-04T12:00:00Z",
+        "source": "BBC Sport",
+        "title": "Joe Root reclaims World No. 1 Test batter crown with masterclass against Sri Lanka",
+        "url": "https://www.bbc.com/sport/cricket/articles/c45678901"
+      },
+      {
+        "published_at": "2025-09-04T15:30:00Z",
+        "source": "The Indian Express",
+        "title": "Jasprit Bumrah and Ravichandran Ashwin retain top bowling spots in ICC Test charts",
+        "url": "https://indianexpress.com/article/sports/cricket/icc-rankings-bumrah-ashwin-top-bowlers-test-9562100/"
+      },
+      {
+        "published_at": "2025-09-15T11:45:00Z",
+        "source": "Reuters Cricket",
+        "title": "Gus Atkinson and Kamran Ghulam voted ICC Players of the Month after breakout campaigns",
+        "url": "https://www.reuters.com/sports/cricket/icc-player-of-the-month-awards-atkinson-ghulam-2025-09-15/"
+      },
+      {
+        "published_at": "2025-09-18T10:00:00Z",
+        "source": "Cricbuzz",
+        "title": "ICC Rankings breakdown: How World Test Championship points shape player ratings",
+        "url": "https://www.cricbuzz.com/cricket-news/131490/icc-rankings-system-wtc-points-breakdown"
+      }
+    ],
+    "players_involved": [
+      "Alastair Cook",
+      "Ben Stokes",
+      "Gus Atkinson",
+      "Jasprit Bumrah",
+      "Joe Root",
+      "Kagiso Rabada",
+      "Kamran Ghulam",
+      "Kane Williamson",
+      "Pat Cummins",
+      "Ravichandran Ashwin",
+      "Rohit Sharma",
+      "Steve Smith",
+      "Yashasvi Jaiswal"
+    ],
+    "teams_involved": [
+      "Australia",
+      "England",
+      "India",
+      "Pakistan",
+      "South Africa",
+      "Sri Lanka"
+    ],
+    "provenance": [
+      {
+        "sentence": "At just 22 years of age, Jaiswal becomes one of the youngest players in cricket history to breach the 800-rating points milestone in Test cricket.",
+        "source": "ESPNcricinfo",
+        "headline": "Yashasvi Jaiswal surges to career-best ICC Test ranking following record double tons"
+      },
+      {
+        "sentence": "England maestro Joe Root has returned to the summit of the ICC Test Batting Rankings following his twin centuries at Lord's against Sri Lanka.",
+        "source": "BBC Sport",
+        "headline": "Joe Root reclaims World No. 1 Test batter crown with masterclass against Sri Lanka"
+      },
+      {
+        "sentence": "India's bowling supremacy in red-ball cricket was underscored once again in the weekly ICC ranking update.",
+        "source": "The Indian Express",
+        "headline": "Jasprit Bumrah and Ravichandran Ashwin retain top bowling spots in ICC Test charts"
+      },
+      {
+        "sentence": "With every World Test Championship series carrying intense context, batters like Yashasvi Jaiswal and Joe Root receive rating boosts for match-winning centuries scored under pressure.",
+        "source": "Cricbuzz",
+        "headline": "ICC Rankings breakdown: How World Test Championship points shape player ratings"
+      }
+    ]
+  },
+  {
+    "cluster_id": 2,
+    "cluster_title": "ICC Champions Trophy \u2014 Champions Trophy (Mohsin Naqvi, Jay Shah)",
+    "article_count": 6,
+    "summary_text": "With the Board of Control for Cricket in India indicating that government clearance will not be forthcoming for cross-border travel to Pakistan, administrators have tabled discussions around a hybrid operational model. The Emirates Cricket Board has placed Dubai International Stadium and Sharjah Cricket Ground on standby as prime candidate host venues for India's scheduled fixtures in the 2025 Champions Trophy. Should the hybrid format receive formal ratification at the upcoming ICC executive board session, the blockbuster India vs Pakistan group showdown will be staged under Dubai's state-of-the-art ring of fire floodlights, ensuring maximum broadcast revenues and neutral spectator convenience. The commercial lifeblood of international cricket's multi-billion broadcast contracts hinges critically upon India-Pakistan encounters.",
+    "bullet_takeaways": [
+      "With the Board of Control for Cricket in India indicating that government clearance will not be forthcoming for cross-border travel to Pakistan, administrators have tabled discussions around a hybrid operational model.",
+      "The Emirates Cricket Board has placed Dubai International Stadium and Sharjah Cricket Ground on standby as prime candidate host venues for India's scheduled fixtures in the 2025 Champions Trophy.",
+      "Should the hybrid format receive formal ratification at the upcoming ICC executive board session, the blockbuster India vs Pakistan group showdown will be staged under Dubai's state-of-the-art ring of fire floodlights, ensuring maximum broadcast revenues and neutral spectator convenience.",
+      "The commercial lifeblood of international cricket's multi-billion broadcast contracts hinges critically upon India-Pakistan encounters."
+    ],
+    "method_used": "Extractive MMR (Maximal Marginal Relevance)",
+    "fallback_used": false,
+    "original_word_count": 398,
+    "summary_word_count": 113,
+    "compression_ratio_pct": 71.6,
+    "unique_sources": [
+      "BBC Sport",
+      "Cricbuzz",
+      "ESPNcricinfo",
+      "Reuters Cricket",
+      "The Indian Express",
+      "Wisden"
+    ],
+    "citations": [
+      {
+        "id": "art_024",
+        "title": "ICC Champions Trophy 2025: PCB proposes hybrid model discussions to resolve venue impasse",
+        "source": "Reuters Cricket",
+        "author": "Gibran Peshimam",
+        "url": "https://www.reuters.com/sports/cricket/champions-trophy-hybrid-model-pcb-bcci-talks-2025-09-02/",
+        "published_at": "2025-09-02T10:15:00Z"
+      },
+      {
+        "id": "art_025",
+        "title": "BCCI reiterates stance: Indian team travel abroad strictly dependent on government clearance",
+        "source": "The Indian Express",
+        "author": "Nitin Sharma",
+        "url": "https://indianexpress.com/article/sports/cricket/bcci-stance-champions-trophy-pakistan-travel-jay-shah-9551120/",
+        "published_at": "2025-09-03T12:40:00Z"
+      },
+      {
+        "id": "art_026",
+        "title": "Dubai and Sharjah emerge as frontrunner neutral venues for India's Champions Trophy matches",
+        "source": "ESPNcricinfo",
+        "author": "Umar Farooq",
+        "url": "https://www.espncricinfo.com/story/dubai-sharjah-neutral-venues-champions-trophy-hybrid-1436811",
+        "published_at": "2025-09-05T08:50:00Z"
+      },
+      {
+        "id": "art_027",
+        "title": "PCB chairman Mohsin Naqvi insists Pakistan prepared to deliver world-class tournament",
+        "source": "BBC Sport",
+        "author": "Aamer Ahmed",
+        "url": "https://www.bbc.com/sport/cricket/articles/c128934509",
+        "published_at": "2025-09-07T14:10:00Z"
+      },
+      {
+        "id": "art_028",
+        "title": "Financial stakes of India-Pakistan cricket: Why ICC cannot afford Champions Trophy boycott",
+        "source": "Cricbuzz",
+        "author": "Kaushik Rangarajan",
+        "url": "https://www.cricbuzz.com/cricket-news/131330/financial-stakes-india-pakistan-icc-commercial-model",
+        "published_at": "2025-09-10T09:00:00Z"
+      },
+      {
+        "id": "art_029",
+        "title": "ICC board meeting scheduled in Dubai to formally ratify Champions Trophy tournament schedule",
+        "source": "Wisden",
+        "author": "Cameron Ponsonby",
+        "url": "https://www.wisden.com/stories/icc-board-meeting-dubai-champions-trophy-schedule-ratification",
+        "published_at": "2025-09-12T17:30:00Z"
+      }
+    ],
+    "timeline": [
+      {
+        "published_at": "2025-09-02T10:15:00Z",
+        "source": "Reuters Cricket",
+        "title": "ICC Champions Trophy 2025: PCB proposes hybrid model discussions to resolve venue impasse",
+        "url": "https://www.reuters.com/sports/cricket/champions-trophy-hybrid-model-pcb-bcci-talks-2025-09-02/"
+      },
+      {
+        "published_at": "2025-09-03T12:40:00Z",
+        "source": "The Indian Express",
+        "title": "BCCI reiterates stance: Indian team travel abroad strictly dependent on government clearance",
+        "url": "https://indianexpress.com/article/sports/cricket/bcci-stance-champions-trophy-pakistan-travel-jay-shah-9551120/"
+      },
+      {
+        "published_at": "2025-09-05T08:50:00Z",
+        "source": "ESPNcricinfo",
+        "title": "Dubai and Sharjah emerge as frontrunner neutral venues for India's Champions Trophy matches",
+        "url": "https://www.espncricinfo.com/story/dubai-sharjah-neutral-venues-champions-trophy-hybrid-1436811"
+      },
+      {
+        "published_at": "2025-09-07T14:10:00Z",
+        "source": "BBC Sport",
+        "title": "PCB chairman Mohsin Naqvi insists Pakistan prepared to deliver world-class tournament",
+        "url": "https://www.bbc.com/sport/cricket/articles/c128934509"
+      },
+      {
+        "published_at": "2025-09-10T09:00:00Z",
+        "source": "Cricbuzz",
+        "title": "Financial stakes of India-Pakistan cricket: Why ICC cannot afford Champions Trophy boycott",
+        "url": "https://www.cricbuzz.com/cricket-news/131330/financial-stakes-india-pakistan-icc-commercial-model"
+      },
+      {
+        "published_at": "2025-09-12T17:30:00Z",
+        "source": "Wisden",
+        "title": "ICC board meeting scheduled in Dubai to formally ratify Champions Trophy tournament schedule",
+        "url": "https://www.wisden.com/stories/icc-board-meeting-dubai-champions-trophy-schedule-ratification"
+      }
+    ],
+    "players_involved": [
+      "Babar Azam",
+      "Jay Shah",
+      "Mohsin Naqvi",
+      "Rohit Sharma",
+      "Shaheen Afridi"
+    ],
+    "teams_involved": [
+      "Australia",
+      "England",
+      "India",
+      "New Zealand",
+      "Pakistan",
+      "South Africa"
+    ],
+    "provenance": [
+      {
+        "sentence": "With the Board of Control for Cricket in India indicating that government clearance will not be forthcoming for cross-border travel to Pakistan, administrators have tabled discussions around a hybrid operational model.",
+        "source": "Reuters Cricket",
+        "headline": "ICC Champions Trophy 2025: PCB proposes hybrid model discussions to resolve venue impasse"
+      },
+      {
+        "sentence": "The Emirates Cricket Board has placed Dubai International Stadium and Sharjah Cricket Ground on standby as prime candidate host venues for India's scheduled fixtures in the 2025 Champions Trophy.",
+        "source": "ESPNcricinfo",
+        "headline": "Dubai and Sharjah emerge as frontrunner neutral venues for India's Champions Trophy matches"
+      },
+      {
+        "sentence": "Should the hybrid format receive formal ratification at the upcoming ICC executive board session, the blockbuster India vs Pakistan group showdown will be staged under Dubai's state-of-the-art ring of fire floodlights, ensuring maximum broadcast revenues and neutral spectator convenience.",
+        "source": "ESPNcricinfo",
+        "headline": "Dubai and Sharjah emerge as frontrunner neutral venues for India's Champions Trophy matches"
+      },
+      {
+        "sentence": "The commercial lifeblood of international cricket's multi-billion broadcast contracts hinges critically upon India-Pakistan encounters.",
+        "source": "Cricbuzz",
+        "headline": "Financial stakes of India-Pakistan cricket: Why ICC cannot afford Champions Trophy boycott"
+      }
+    ]
+  },
+  {
+    "cluster_id": 3,
+    "cluster_title": "Indian Premier League \u2014 Auction Mega (KL Rahul, Rishabh Pant)",
+    "article_count": 5,
+    "summary_text": "The IPL Governing Council has formally declared the player regulation framework ahead of the monumental 2025 Mega Auction. In a seismic shift for Indian Premier League dynamics, Delhi Capitals and franchise captain Rishabh Pant have mutually agreed to part ways, releasing the star wicketkeeper-batter into the mega auction pool. Royal Challengers Bengaluru have renewed their enduring bond with Virat Kohli, retaining the modern great for a massive sum of INR 21 crore. Strategic analysts across IPL franchises are recalibrating their auction algorithms around the newly modified Right to Match mechanism.",
+    "bullet_takeaways": [
+      "The IPL Governing Council has formally declared the player regulation framework ahead of the monumental 2025 Mega Auction.",
+      "In a seismic shift for Indian Premier League dynamics, Delhi Capitals and franchise captain Rishabh Pant have mutually agreed to part ways, releasing the star wicketkeeper-batter into the mega auction pool.",
+      "Royal Challengers Bengaluru have renewed their enduring bond with Virat Kohli, retaining the modern great for a massive sum of INR 21 crore.",
+      "Strategic analysts across IPL franchises are recalibrating their auction algorithms around the newly modified Right to Match mechanism."
+    ],
+    "method_used": "Extractive MMR (Maximal Marginal Relevance)",
+    "fallback_used": false,
+    "original_word_count": 362,
+    "summary_word_count": 90,
+    "compression_ratio_pct": 75.1,
+    "unique_sources": [
+      "Cricbuzz",
+      "ESPNcricinfo",
+      "Reuters Cricket",
+      "The Indian Express",
+      "Wisden"
+    ],
+    "citations": [
+      {
+        "id": "art_007",
+        "title": "IPL Mega Auction 2025: Franchises brace for massive salary cap hike and RTM return",
+        "source": "ESPNcricinfo",
+        "author": "Nagraj Gollapudi",
+        "url": "https://www.espncricinfo.com/story/ipl-mega-auction-retention-rules-rtm-card-1430112",
+        "published_at": "2025-09-28T07:15:00Z"
+      },
+      {
+        "id": "art_008",
+        "title": "Rishabh Pant enters IPL auction pool after DC parting: Record bids anticipated",
+        "source": "Cricbuzz",
+        "author": "BCCI Beat Reporter",
+        "url": "https://www.cricbuzz.com/cricket-news/131450/rishabh-pant-ipl-auction-delhi-capitals-parting",
+        "published_at": "2025-10-31T15:20:00Z"
+      },
+      {
+        "id": "art_009",
+        "title": "Shreyas Iyer, KL Rahul, and Pant set for record-shattering bidding frenzy in Jeddah",
+        "source": "The Indian Express",
+        "author": "Sriram Veera",
+        "url": "https://indianexpress.com/article/sports/ipl/ipl-mega-auction-jeddah-pant-iyer-rahul-9642109/",
+        "published_at": "2025-11-05T10:00:00Z"
+      },
+      {
+        "id": "art_011",
+        "title": "RCB retain Virat Kohli for INR 21 crore ahead of IPL Mega Auction",
+        "source": "Wisden",
+        "author": "Ben Gardner",
+        "url": "https://www.wisden.com/stories/rcb-retention-virat-kohli-21-crore-ipl-auction",
+        "published_at": "2025-10-31T19:30:00Z"
+      },
+      {
+        "id": "art_012",
+        "title": "IPL Auction Dynamics: How the RTM card changes franchise bidding math",
+        "source": "Reuters Cricket",
+        "author": "Trevor Chesterfield",
+        "url": "https://www.reuters.com/sports/cricket/ipl-auction-rtm-rule-math-breakdown-2025-11-06/",
+        "published_at": "2025-11-06T11:00:00Z"
+      }
+    ],
+    "timeline": [
+      {
+        "published_at": "2025-09-28T07:15:00Z",
+        "source": "ESPNcricinfo",
+        "title": "IPL Mega Auction 2025: Franchises brace for massive salary cap hike and RTM return",
+        "url": "https://www.espncricinfo.com/story/ipl-mega-auction-retention-rules-rtm-card-1430112"
+      },
+      {
+        "published_at": "2025-10-31T15:20:00Z",
+        "source": "Cricbuzz",
+        "title": "Rishabh Pant enters IPL auction pool after DC parting: Record bids anticipated",
+        "url": "https://www.cricbuzz.com/cricket-news/131450/rishabh-pant-ipl-auction-delhi-capitals-parting"
+      },
+      {
+        "published_at": "2025-10-31T19:30:00Z",
+        "source": "Wisden",
+        "title": "RCB retain Virat Kohli for INR 21 crore ahead of IPL Mega Auction",
+        "url": "https://www.wisden.com/stories/rcb-retention-virat-kohli-21-crore-ipl-auction"
+      },
+      {
+        "published_at": "2025-11-05T10:00:00Z",
+        "source": "The Indian Express",
+        "title": "Shreyas Iyer, KL Rahul, and Pant set for record-shattering bidding frenzy in Jeddah",
+        "url": "https://indianexpress.com/article/sports/ipl/ipl-mega-auction-jeddah-pant-iyer-rahul-9642109/"
+      },
+      {
+        "published_at": "2025-11-06T11:00:00Z",
+        "source": "Reuters Cricket",
+        "title": "IPL Auction Dynamics: How the RTM card changes franchise bidding math",
+        "url": "https://www.reuters.com/sports/cricket/ipl-auction-rtm-rule-math-breakdown-2025-11-06/"
+      }
+    ],
+    "players_involved": [
+      "Hardik Pandya",
+      "Heinrich Klaasen",
+      "KL Rahul",
+      "MS Dhoni",
+      "Pat Cummins",
+      "Rajat Patidar",
+      "Rishabh Pant",
+      "Rohit Sharma",
+      "Shreyas Iyer",
+      "Travis Head",
+      "Virat Kohli",
+      "Yash Dayal"
+    ],
+    "teams_involved": [
+      "Chennai Super Kings",
+      "Delhi Capitals",
+      "Kolkata Knight Riders",
+      "Lucknow Super Giants",
+      "Mumbai Indians",
+      "Punjab Kings",
+      "Royal Challengers Bengaluru",
+      "Sunrisers Hyderabad"
+    ],
+    "provenance": [
+      {
+        "sentence": "The IPL Governing Council has formally declared the player regulation framework ahead of the monumental 2025 Mega Auction.",
+        "source": "ESPNcricinfo",
+        "headline": "IPL Mega Auction 2025: Franchises brace for massive salary cap hike and RTM return"
+      },
+      {
+        "sentence": "In a seismic shift for Indian Premier League dynamics, Delhi Capitals and franchise captain Rishabh Pant have mutually agreed to part ways, releasing the star wicketkeeper-batter into the mega auction pool.",
+        "source": "Cricbuzz",
+        "headline": "Rishabh Pant enters IPL auction pool after DC parting: Record bids anticipated"
+      },
+      {
+        "sentence": "Royal Challengers Bengaluru have renewed their enduring bond with Virat Kohli, retaining the modern great for a massive sum of INR 21 crore.",
+        "source": "Wisden",
+        "headline": "RCB retain Virat Kohli for INR 21 crore ahead of IPL Mega Auction"
+      },
+      {
+        "sentence": "Strategic analysts across IPL franchises are recalibrating their auction algorithms around the newly modified Right to Match mechanism.",
+        "source": "Reuters Cricket",
+        "headline": "IPL Auction Dynamics: How the RTM card changes franchise bidding math"
+      }
+    ]
+  },
+  {
+    "cluster_id": 4,
+    "cluster_title": "The Ashes \u2014 Ashes Oval (Ben Stokes, Stuart Broad)",
+    "article_count": 4,
+    "summary_text": "A pulsating fourth day at The Oval set up an unforgettable finale to a legendary Ashes series. In the final over of the series, Broad coaxed an edge from Todd Murphy straight into the gloves of Jonny Bairstow, sparking euphoric celebrations at The Oval and sealing a 49-run victory for England to level the Ashes series 2-2. The veteran fast bowler finished with 604 Test wickets, walking off through an emotional guard of honour from teammates and Australian adversaries alike. Trailing 2-0 following heartbreaking defeats at Edgbaston and Lord's, England maintained unwavering faith in their philosophy, dominating Headingley and Manchester before conquering The Oval.",
+    "bullet_takeaways": [
+      "A pulsating fourth day at The Oval set up an unforgettable finale to a legendary Ashes series.",
+      "In the final over of the series, Broad coaxed an edge from Todd Murphy straight into the gloves of Jonny Bairstow, sparking euphoric celebrations at The Oval and sealing a 49-run victory for England to level the Ashes series 2-2.",
+      "The veteran fast bowler finished with 604 Test wickets, walking off through an emotional guard of honour from teammates and Australian adversaries alike.",
+      "Trailing 2-0 following heartbreaking defeats at Edgbaston and Lord's, England maintained unwavering faith in their philosophy, dominating Headingley and Manchester before conquering The Oval."
+    ],
+    "method_used": "Extractive MMR (Maximal Marginal Relevance)",
+    "fallback_used": false,
+    "original_word_count": 293,
+    "summary_word_count": 104,
+    "compression_ratio_pct": 64.5,
+    "unique_sources": [
+      "BBC Sport",
+      "ESPNcricinfo",
+      "The Guardian",
+      "Wisden"
+    ],
+    "citations": [
+      {
+        "id": "art_013",
+        "title": "Ashes 5th Test Day 4: England strike late as Australia chase 384 in Oval thriller",
+        "source": "BBC Sport",
+        "author": "Jonathan Agnew",
+        "url": "https://www.bbc.com/sport/cricket/ashes-fifth-test-day-four-oval-report",
+        "published_at": "2025-07-30T17:40:00Z"
+      },
+      {
+        "id": "art_014",
+        "title": "Stuart Broad signs off in fairytale fashion with match-winning final wicket at The Oval",
+        "source": "ESPNcricinfo",
+        "author": "Andrew Miller",
+        "url": "https://www.espncricinfo.com/story/stuart-broad-fairytale-retirement-ashes-oval-1422119",
+        "published_at": "2025-07-31T18:10:00Z"
+      },
+      {
+        "id": "art_016",
+        "title": "Stokes hails England's Bazball resilience after fighting back from 0-2 deficit",
+        "source": "The Guardian",
+        "author": "Simon Burnton",
+        "url": "https://www.theguardian.com/sport/cricket/stokes-bazball-ashes-comeback-oval",
+        "published_at": "2025-08-01T07:45:00Z"
+      },
+      {
+        "id": "art_018",
+        "title": "Tactical review: The five defining overs of an unforgettable Ashes summer",
+        "source": "Wisden",
+        "author": "Phil Walker",
+        "url": "https://www.wisden.com/stories/tactical-review-ashes-defining-moments-oval",
+        "published_at": "2025-08-02T13:00:00Z"
+      }
+    ],
+    "timeline": [
+      {
+        "published_at": "2025-07-30T17:40:00Z",
+        "source": "BBC Sport",
+        "title": "Ashes 5th Test Day 4: England strike late as Australia chase 384 in Oval thriller",
+        "url": "https://www.bbc.com/sport/cricket/ashes-fifth-test-day-four-oval-report"
+      },
+      {
+        "published_at": "2025-07-31T18:10:00Z",
+        "source": "ESPNcricinfo",
+        "title": "Stuart Broad signs off in fairytale fashion with match-winning final wicket at The Oval",
+        "url": "https://www.espncricinfo.com/story/stuart-broad-fairytale-retirement-ashes-oval-1422119"
+      },
+      {
+        "published_at": "2025-08-01T07:45:00Z",
+        "source": "The Guardian",
+        "title": "Stokes hails England's Bazball resilience after fighting back from 0-2 deficit",
+        "url": "https://www.theguardian.com/sport/cricket/stokes-bazball-ashes-comeback-oval"
+      },
+      {
+        "published_at": "2025-08-02T13:00:00Z",
+        "source": "Wisden",
+        "title": "Tactical review: The five defining overs of an unforgettable Ashes summer",
+        "url": "https://www.wisden.com/stories/tactical-review-ashes-defining-moments-oval"
+      }
+    ],
+    "players_involved": [
+      "Alex Carey",
+      "Ben Stokes",
+      "Brendon McCullum",
+      "Chris Woakes",
+      "David Warner",
+      "Joe Root",
+      "Pat Cummins",
+      "Stuart Broad",
+      "Todd Murphy",
+      "Travis Head",
+      "Usman Khawaja"
+    ],
+    "teams_involved": [
+      "Australia",
+      "England"
+    ],
+    "provenance": [
+      {
+        "sentence": "A pulsating fourth day at The Oval set up an unforgettable finale to a legendary Ashes series.",
+        "source": "BBC Sport",
+        "headline": "Ashes 5th Test Day 4: England strike late as Australia chase 384 in Oval thriller"
+      },
+      {
+        "sentence": "In the final over of the series, Broad coaxed an edge from Todd Murphy straight into the gloves of Jonny Bairstow, sparking euphoric celebrations at The Oval and sealing a 49-run victory for England to level the Ashes series 2-2.",
+        "source": "ESPNcricinfo",
+        "headline": "Stuart Broad signs off in fairytale fashion with match-winning final wicket at The Oval"
+      },
+      {
+        "sentence": "The veteran fast bowler finished with 604 Test wickets, walking off through an emotional guard of honour from teammates and Australian adversaries alike.",
+        "source": "ESPNcricinfo",
+        "headline": "Stuart Broad signs off in fairytale fashion with match-winning final wicket at The Oval"
+      },
+      {
+        "sentence": "Trailing 2-0 following heartbreaking defeats at Edgbaston and Lord's, England maintained unwavering faith in their philosophy, dominating Headingley and Manchester before conquering The Oval.",
+        "source": "The Guardian",
+        "headline": "Stokes hails England's Bazball resilience after fighting back from 0-2 deficit"
+      }
+    ]
+  },
+  {
+    "cluster_id": 5,
+    "cluster_title": "Border-Gavaskar Trophy \u2014 Jasprit Bumrah (Jasprit Bumrah, Gautam Gambhir)",
+    "article_count": 3,
+    "summary_text": "India's premier pace ace Jasprit Bumrah has entered the final phase of his rehabilitation program at the National Cricket Academy (NCA) in Bengaluru. Working under the supervision of sports science director Nitin Patel, Bumrah has gradually ramped up his bowling workloads in simulated match conditions. The medical staff has expressed total satisfaction with his spinal stability and kinetic chain mechanics following his past lower-back stress management regime. Chief selector Ajit Agarkar noted that Bumrah's physical conditioning is peak, positioning him to lead the seam attack in the upcoming five-Test away series against Australia.",
+    "bullet_takeaways": [
+      "India's premier pace ace Jasprit Bumrah has entered the final phase of his rehabilitation program at the National Cricket Academy (NCA) in Bengaluru.",
+      "Working under the supervision of sports science director Nitin Patel, Bumrah has gradually ramped up his bowling workloads in simulated match conditions.",
+      "The medical staff has expressed total satisfaction with his spinal stability and kinetic chain mechanics following his past lower-back stress management regime.",
+      "Chief selector Ajit Agarkar noted that Bumrah's physical conditioning is peak, positioning him to lead the seam attack in the upcoming five-Test away series against Australia."
+    ],
+    "method_used": "Extractive MMR (Maximal Marginal Relevance)",
+    "fallback_used": false,
+    "original_word_count": 204,
+    "summary_word_count": 93,
+    "compression_ratio_pct": 54.4,
+    "unique_sources": [
+      "ESPNcricinfo",
+      "The Indian Express",
+      "Wisden"
+    ],
+    "citations": [
+      {
+        "id": "art_019",
+        "title": "Jasprit Bumrah undergoes intensive rehab at NCA Bengaluru ahead of Australian tour",
+        "source": "ESPNcricinfo",
+        "author": "Karthik Krishnaswamy",
+        "url": "https://www.espncricinfo.com/story/jasprit-bumrah-nca-rehab-bcci-australia-tour-1435210",
+        "published_at": "2025-08-15T09:30:00Z"
+      },
+      {
+        "id": "art_020",
+        "title": "BCCI medical bulletin confirms Bumrah bowling at full tilt with zero pain",
+        "source": "The Indian Express",
+        "author": "Venkat Krishna B",
+        "url": "https://indianexpress.com/article/sports/cricket/bumrah-injury-update-bcci-medical-team-clears-pacer-9481102/",
+        "published_at": "2025-08-20T14:15:00Z"
+      },
+      {
+        "id": "art_023",
+        "title": "Biomechanics specialist breaks down Jasprit Bumrah's unique bowling action and recovery",
+        "source": "Wisden",
+        "author": "Taha Hashim",
+        "url": "https://www.wisden.com/stories/jasprit-bumrah-biomechanics-action-lower-back-stress",
+        "published_at": "2025-08-28T16:40:00Z"
+      }
+    ],
+    "timeline": [
+      {
+        "published_at": "2025-08-15T09:30:00Z",
+        "source": "ESPNcricinfo",
+        "title": "Jasprit Bumrah undergoes intensive rehab at NCA Bengaluru ahead of Australian tour",
+        "url": "https://www.espncricinfo.com/story/jasprit-bumrah-nca-rehab-bcci-australia-tour-1435210"
+      },
+      {
+        "published_at": "2025-08-20T14:15:00Z",
+        "source": "The Indian Express",
+        "title": "BCCI medical bulletin confirms Bumrah bowling at full tilt with zero pain",
+        "url": "https://indianexpress.com/article/sports/cricket/bumrah-injury-update-bcci-medical-team-clears-pacer-9481102/"
+      },
+      {
+        "published_at": "2025-08-28T16:40:00Z",
+        "source": "Wisden",
+        "title": "Biomechanics specialist breaks down Jasprit Bumrah's unique bowling action and recovery",
+        "url": "https://www.wisden.com/stories/jasprit-bumrah-biomechanics-action-lower-back-stress"
+      }
+    ],
+    "players_involved": [
+      "Ajit Agarkar",
+      "Gautam Gambhir",
+      "Jasprit Bumrah",
+      "Nitin Patel"
+    ],
+    "teams_involved": [
+      "Australia",
+      "India"
+    ],
+    "provenance": [
+      {
+        "sentence": "India's premier pace ace Jasprit Bumrah has entered the final phase of his rehabilitation program at the National Cricket Academy (NCA) in Bengaluru.",
+        "source": "ESPNcricinfo",
+        "headline": "Jasprit Bumrah undergoes intensive rehab at NCA Bengaluru ahead of Australian tour"
+      },
+      {
+        "sentence": "Working under the supervision of sports science director Nitin Patel, Bumrah has gradually ramped up his bowling workloads in simulated match conditions.",
+        "source": "ESPNcricinfo",
+        "headline": "Jasprit Bumrah undergoes intensive rehab at NCA Bengaluru ahead of Australian tour"
+      },
+      {
+        "sentence": "The medical staff has expressed total satisfaction with his spinal stability and kinetic chain mechanics following his past lower-back stress management regime.",
+        "source": "ESPNcricinfo",
+        "headline": "Jasprit Bumrah undergoes intensive rehab at NCA Bengaluru ahead of Australian tour"
+      },
+      {
+        "sentence": "Chief selector Ajit Agarkar noted that Bumrah's physical conditioning is peak, positioning him to lead the seam attack in the upcoming five-Test away series against Australia.",
+        "source": "The Indian Express",
+        "headline": "BCCI medical bulletin confirms Bumrah bowling at full tilt with zero pain"
+      }
+    ]
+  },
+  {
+    "cluster_id": 6,
+    "cluster_title": "The Ashes \u2014 Ball Change (Pat Cummins, Ricky Ponting)",
+    "article_count": 2,
+    "summary_text": "The climactic fifth Test at The Oval was not without lingering controversy after Australian batters and former captains questioned the umpires' ball replacement during the 37th over of the fourth innings. Australia had been cruising at 126 for no loss when the ball was swapped for a noticeably newer, harder Duke ball that exhibited exaggerated swing and seam movement. Australia's top order is leaving nothing to chance as they brace for Jasprit Bumrah's probing spells on bouncy Australian surfaces. Smith acknowledged that Bumrah's hyper-extended arm release and ability to swing the ball both ways from wide of the crease make him the most challenging bowler to face in world cricket today.",
+    "bullet_takeaways": [
+      "The climactic fifth Test at The Oval was not without lingering controversy after Australian batters and former captains questioned the umpires' ball replacement during the 37th over of the fourth innings.",
+      "Australia had been cruising at 126 for no loss when the ball was swapped for a noticeably newer, harder Duke ball that exhibited exaggerated swing and seam movement.",
+      "Australia's top order is leaving nothing to chance as they brace for Jasprit Bumrah's probing spells on bouncy Australian surfaces.",
+      "Smith acknowledged that Bumrah's hyper-extended arm release and ability to swing the ball both ways from wide of the crease make him the most challenging bowler to face in world cricket today."
+    ],
+    "method_used": "Extractive MMR (Maximal Marginal Relevance)",
+    "fallback_used": false,
+    "original_word_count": 149,
+    "summary_word_count": 111,
+    "compression_ratio_pct": 25.5,
+    "unique_sources": [
+      "Cricbuzz",
+      "The Sydney Morning Herald"
+    ],
+    "citations": [
+      {
+        "id": "art_017",
+        "title": "Ball change controversy at The Oval: Australia voice frustration over replacement duke",
+        "source": "Cricbuzz",
+        "author": "Bharat Sundaresan",
+        "url": "https://www.cricbuzz.com/cricket-news/130887/ashes-ball-change-controversy-oval-australia",
+        "published_at": "2025-08-01T11:20:00Z"
+      },
+      {
+        "id": "art_022",
+        "title": "Australian batters prepare for Bumrah's awkward release angle ahead of Test summer",
+        "source": "The Sydney Morning Herald",
+        "author": "Andrew Wu",
+        "url": "https://www.smh.com.au/sport/cricket/australia-test-batters-prepare-for-jasprit-bumrah-20250825-p5k891.html",
+        "published_at": "2025-08-25T11:20:00Z"
+      }
+    ],
+    "timeline": [
+      {
+        "published_at": "2025-08-01T11:20:00Z",
+        "source": "Cricbuzz",
+        "title": "Ball change controversy at The Oval: Australia voice frustration over replacement duke",
+        "url": "https://www.cricbuzz.com/cricket-news/130887/ashes-ball-change-controversy-oval-australia"
+      },
+      {
+        "published_at": "2025-08-25T11:20:00Z",
+        "source": "The Sydney Morning Herald",
+        "title": "Australian batters prepare for Bumrah's awkward release angle ahead of Test summer",
+        "url": "https://www.smh.com.au/sport/cricket/australia-test-batters-prepare-for-jasprit-bumrah-20250825-p5k891.html"
+      }
+    ],
+    "players_involved": [
+      "Jasprit Bumrah",
+      "Marnus Labuschagne",
+      "Pat Cummins",
+      "Ricky Ponting",
+      "Steve Smith",
+      "Usman Khawaja"
+    ],
+    "teams_involved": [
+      "Australia",
+      "England",
+      "India"
+    ],
+    "provenance": [
+      {
+        "sentence": "The climactic fifth Test at The Oval was not without lingering controversy after Australian batters and former captains questioned the umpires' ball replacement during the 37th over of the fourth innings.",
+        "source": "Cricbuzz",
+        "headline": "Ball change controversy at The Oval: Australia voice frustration over replacement duke"
+      },
+      {
+        "sentence": "Australia had been cruising at 126 for no loss when the ball was swapped for a noticeably newer, harder Duke ball that exhibited exaggerated swing and seam movement.",
+        "source": "Cricbuzz",
+        "headline": "Ball change controversy at The Oval: Australia voice frustration over replacement duke"
+      },
+      {
+        "sentence": "Australia's top order is leaving nothing to chance as they brace for Jasprit Bumrah's probing spells on bouncy Australian surfaces.",
+        "source": "The Sydney Morning Herald",
+        "headline": "Australian batters prepare for Bumrah's awkward release angle ahead of Test summer"
+      },
+      {
+        "sentence": "Smith acknowledged that Bumrah's hyper-extended arm release and ability to swing the ball both ways from wide of the crease make him the most challenging bowler to face in world cricket today.",
+        "source": "The Sydney Morning Herald",
+        "headline": "Australian batters prepare for Bumrah's awkward release angle ahead of Test summer"
+      }
+    ]
+  }
+]

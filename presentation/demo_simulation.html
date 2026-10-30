@@ -1,0 +1,779 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CricIntel AI — Interactive Demo Video Simulator with Voiceover & Annotations</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --bg-dark: #0b0f19;
+      --bg-panel: rgba(15, 23, 42, 0.85);
+      --pitch-green: #00D26A;
+      --pitch-green-glow: rgba(0, 210, 106, 0.4);
+      --accent-blue: #38BDF8;
+      --accent-amber: #F59E0B;
+      --text-main: #F8FAFC;
+      --text-muted: #94A3B8;
+      --font-sans: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      --font-mono: 'JetBrains Mono', monospace;
+    }
+
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      background: radial-gradient(circle at 10% 10%, #0d1629 0%, #050811 90%);
+      color: var(--text-main);
+      font-family: var(--font-sans);
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      overflow-x: hidden;
+    }
+
+    /* Header */
+    header.sim-header {
+      padding: 14px 28px;
+      background: rgba(11, 15, 25, 0.9);
+      backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      z-index: 100;
+    }
+
+    .brand-title {
+      font-size: 1.15rem;
+      font-weight: 800;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .sim-badge {
+      background: rgba(0, 210, 106, 0.15);
+      color: var(--pitch-green);
+      border: 1px solid var(--pitch-green);
+      padding: 3px 8px;
+      border-radius: 6px;
+      font-size: 0.72rem;
+      font-weight: 700;
+      letter-spacing: 0.05em;
+    }
+
+    .header-info {
+      font-size: 0.85rem;
+      color: var(--text-muted);
+    }
+    .header-info strong { color: var(--accent-blue); }
+
+    /* Main Player Container */
+    .player-container {
+      flex: 1;
+      max-width: 1280px;
+      width: 95%;
+      margin: 20px auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Video Canvas / Viewport */
+    .video-viewport {
+      position: relative;
+      width: 100%;
+      height: 620px;
+      background: #070a13;
+      border: 1px solid rgba(0, 210, 106, 0.3);
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 20px 50px rgba(0,0,0,0.7), 0 0 30px rgba(0,210,106,0.08);
+    }
+
+    /* Screen Frames */
+    .screen-frame {
+      position: absolute;
+      inset: 0;
+      padding: 28px;
+      display: flex;
+      flex-direction: column;
+      opacity: 0;
+      transform: scale(0.98);
+      transition: all 0.4s ease;
+      pointer-events: none;
+      background-size: cover;
+      background-position: center;
+    }
+
+    .screen-frame.active {
+      opacity: 1;
+      transform: scale(1);
+      pointer-events: auto;
+    }
+
+    /* Top Mock App Header */
+    .app-mock-header {
+      background: rgba(15, 23, 42, 0.8);
+      border: 1px solid rgba(0, 210, 106, 0.25);
+      border-radius: 12px;
+      padding: 16px 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 20px;
+    }
+
+    .app-title-group h2 {
+      font-size: 1.3rem;
+      font-weight: 800;
+      color: #fff;
+    }
+
+    .app-title-group p {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+
+    .app-tabs-bar {
+      display: flex;
+      gap: 8px;
+      margin-bottom: 20px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+      padding-bottom: 10px;
+    }
+
+    .tab-item {
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px solid transparent;
+      transition: all 0.2s ease;
+    }
+
+    .tab-item.active {
+      color: #fff;
+      background: rgba(0, 210, 106, 0.15);
+      border-color: var(--pitch-green);
+    }
+
+    /* Screen Content Components */
+    .screen-body {
+      flex: 1;
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      gap: 20px;
+      overflow: hidden;
+    }
+
+    .mock-sidebar {
+      background: rgba(15, 23, 42, 0.6);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      font-size: 0.82rem;
+    }
+
+    .sidebar-widget {
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .sidebar-widget label {
+      color: var(--text-muted);
+      font-weight: 600;
+      font-size: 0.78rem;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .mock-input {
+      background: #0b0f19;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 6px;
+      padding: 6px 10px;
+      color: #fff;
+      font-size: 0.8rem;
+    }
+
+    .mock-main-content {
+      background: rgba(15, 23, 42, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 12px;
+      padding: 20px;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+    }
+
+    /* Cards in Simulated View */
+    .mock-card {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.08);
+      border-radius: 10px;
+      padding: 14px 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+    }
+
+    .mock-card h4 {
+      font-size: 0.98rem;
+      color: #fff;
+      display: flex;
+      justify-content: space-between;
+    }
+
+    .mock-card p {
+      font-size: 0.84rem;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+
+    /* On-Screen Annotations Callouts */
+    .annotation-box {
+      position: absolute;
+      background: rgba(0, 210, 106, 0.15);
+      border: 2px solid var(--pitch-green);
+      border-radius: 12px;
+      padding: 10px 16px;
+      box-shadow: 0 0 25px var(--pitch-green-glow);
+      pointer-events: none;
+      animation: pulseBorder 1.5s infinite alternate;
+      z-index: 50;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.82rem;
+      font-weight: 700;
+      color: #fff;
+      backdrop-filter: blur(8px);
+    }
+
+    @keyframes pulseBorder {
+      0% { box-shadow: 0 0 10px rgba(0, 210, 106, 0.3); border-color: #00D26A; }
+      100% { box-shadow: 0 0 30px rgba(0, 210, 106, 0.8); border-color: #38BDF8; }
+    }
+
+    /* Subtitles Bar (Bottom of Video) */
+    .subtitles-overlay {
+      position: absolute;
+      bottom: 20px;
+      left: 5%;
+      right: 5%;
+      background: rgba(5, 8, 17, 0.92);
+      backdrop-filter: blur(12px);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      border-radius: 10px;
+      padding: 12px 20px;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #f1f5f9;
+      text-align: center;
+      line-height: 1.4;
+      z-index: 60;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.6);
+      transition: all 0.3s ease;
+    }
+
+    .subtitles-overlay strong {
+      color: var(--pitch-green);
+      font-family: var(--font-mono);
+      font-size: 0.85rem;
+      margin-right: 8px;
+    }
+
+    /* Controls Panel */
+    .controls-panel {
+      background: rgba(15, 23, 42, 0.85);
+      border: 1px solid rgba(255, 255, 255, 0.1);
+      border-radius: 14px;
+      padding: 16px 24px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .timeline-scrubber {
+      width: 100%;
+      height: 6px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+      position: relative;
+      cursor: pointer;
+    }
+
+    .timeline-progress {
+      height: 100%;
+      background: linear-gradient(90deg, var(--accent-blue), var(--pitch-green));
+      border-radius: 3px;
+      width: 0%;
+      transition: width 0.25s linear;
+    }
+
+    .control-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .btn-group {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    button.sim-btn {
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      color: #fff;
+      padding: 8px 16px;
+      border-radius: 8px;
+      font-size: 0.88rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      transition: all 0.2s ease;
+    }
+
+    button.sim-btn:hover {
+      background: rgba(0, 210, 106, 0.2);
+      border-color: var(--pitch-green);
+    }
+
+    button.sim-btn.primary {
+      background: var(--pitch-green);
+      color: #050811;
+      border-color: var(--pitch-green);
+    }
+
+    button.sim-btn.primary:hover {
+      background: #00ea77;
+    }
+
+    .time-readout {
+      font-family: var(--font-mono);
+      font-size: 0.9rem;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="sim-header">
+    <div class="brand-title">
+      <span>🏏 CricIntel AI</span>
+      <span class="sim-badge">INTERACTIVE DEMO SIMULATOR</span>
+    </div>
+    <div class="header-info">
+      Faculty Evaluator: <strong>Dr. Gundimeda Venugopal</strong> (Cabin CB618) &bull; Due: <strong>Oct 30</strong>
+    </div>
+  </header>
+
+  <!-- Player Stage -->
+  <main class="player-container">
+
+    <div class="video-viewport" id="viewport">
+
+      <!-- FRAME 0: Hero & Launch -->
+      <section class="screen-frame active" id="frame-0">
+        <div class="app-mock-header">
+          <div class="app-title-group">
+            <h2>🏏 CricIntel AI — Cricket News Intelligence System</h2>
+            <p>Autonomous multi-article text summarization, semantic vector clustering &amp; news analytics</p>
+          </div>
+          <span class="sim-badge">ATSMA LAB 2026</span>
+        </div>
+
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 16px; margin-bottom: 24px;">
+          <div class="mock-card" style="text-align: center; border-color: rgba(0,210,106,0.3);">
+            <div style="font-size: 2.2rem; font-weight: 800; color: var(--pitch-green);">39</div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">Articles Ingested</div>
+          </div>
+          <div class="mock-card" style="text-align: center; border-color: rgba(56,189,248,0.3);">
+            <div style="font-size: 2.2rem; font-weight: 800; color: var(--accent-blue);">7</div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">Story Clusters</div>
+          </div>
+          <div class="mock-card" style="text-align: center; border-color: rgba(245,158,11,0.3);">
+            <div style="font-size: 2.2rem; font-weight: 800; color: var(--accent-amber);">83.7%</div>
+            <div style="font-size: 0.75rem; text-transform: uppercase; color: var(--text-muted);">Avg Compression</div>
+          </div>
+        </div>
+
+        <div class="mock-card" style="background: rgba(0,210,106,0.04); border-left: 4px solid var(--pitch-green);">
+          <h4>⚡ System Initialized &bull; Ready for Defense</h4>
+          <p>Dual-mode ingestion active: Curated benchmark loaded with 39 articles across 7 stories. Agglomerative Hierarchical Clustering active with Cosine Distance threshold 0.65.</p>
+        </div>
+
+        <div class="annotation-box" style="top: 130px; right: 50px;">
+          🎯 <span>Annotation: 39 Ground-Truth Articles &bull; 7 Ground-Truth Stories</span>
+        </div>
+      </section>
+
+      <!-- FRAME 1: News Feed -->
+      <section class="screen-frame" id="frame-1">
+        <div class="app-mock-header">
+          <div class="app-title-group">
+            <h2>Tab 1: Live News Feed &amp; Preprocessor</h2>
+            <p>Multi-source ingestion with cricket entity recognition</p>
+          </div>
+        </div>
+        <div class="app-tabs-bar">
+          <span class="tab-item active">📰 1. News Feed</span>
+          <span class="tab-item">🌳 2. Story Clusters</span>
+          <span class="tab-item">📝 3. AI Briefing</span>
+          <span class="tab-item">📊 4. Analytics</span>
+          <span class="tab-item">💾 5. Data Export</span>
+        </div>
+        <div class="screen-body">
+          <div class="mock-sidebar">
+            <div class="sidebar-widget">
+              <label>Data Ingestion Source</label>
+              <div class="mock-input">Curated Offline (39 Arts)</div>
+            </div>
+            <div class="sidebar-widget">
+              <label>Search Entity</label>
+              <div class="mock-input">Rohit Sharma</div>
+            </div>
+          </div>
+          <div class="mock-main-content">
+            <div class="mock-card">
+              <h4>
+                <span>India announce 15-man squad for T20 World Cup</span>
+                <span style="font-size: 0.75rem; color: var(--pitch-green);">ESPNcricinfo</span>
+              </h4>
+              <p>MUMBAI — Rohit Sharma will captain the 15-man squad with Hardik Pandya named vice-captain. Four spinners selected for Caribbean slow decks.</p>
+            </div>
+            <div class="mock-card">
+              <h4>
+                <span>Broad takes final wicket at The Oval in Ashes thriller</span>
+                <span style="font-size: 0.75rem; color: var(--accent-blue);">BBC Sport</span>
+              </h4>
+              <p>LONDON — Stuart Broad concluded his Test career in fairy-tale fashion by taking the final Australian wicket to level the series 2-2.</p>
+            </div>
+          </div>
+        </div>
+        <div class="annotation-box" style="top: 160px; right: 80px;">
+          🔍 <span>Annotation: Wire service prefixes stripped; Entity tags extracted</span>
+        </div>
+      </section>
+
+      <!-- FRAME 2: Story Clusters -->
+      <section class="screen-frame" id="frame-2">
+        <div class="app-mock-header">
+          <div class="app-title-group">
+            <h2>Tab 2: Semantic Story Clusters</h2>
+            <p>Agglomerative Hierarchical Clustering (Cosine Distance Cutoff = 0.65)</p>
+          </div>
+        </div>
+        <div class="app-tabs-bar">
+          <span class="tab-item">📰 1. News Feed</span>
+          <span class="tab-item active">🌳 2. Story Clusters</span>
+          <span class="tab-item">📝 3. AI Briefing</span>
+          <span class="tab-item">📊 4. Analytics</span>
+          <span class="tab-item">💾 5. Data Export</span>
+        </div>
+        <div class="screen-body">
+          <div class="mock-sidebar">
+            <div class="sidebar-widget">
+              <label>Algorithm</label>
+              <div class="mock-input">Agglomerative Hierarchical</div>
+            </div>
+            <div class="sidebar-widget">
+              <label>Cosine Cutoff</label>
+              <div class="mock-input">0.65 (Dynamic)</div>
+            </div>
+            <div class="sidebar-widget">
+              <label>Validation Metrics</label>
+              <div style="color: var(--pitch-green); font-weight:700;">Silhouette: 0.542</div>
+              <div style="color: var(--accent-blue); font-weight:700;">Davies-Bouldin: 1.218</div>
+            </div>
+          </div>
+          <div class="mock-main-content">
+            <div class="mock-card" style="border-left: 4px solid var(--pitch-green);">
+              <h4>Story 1: ICC Men's T20 World Cup — Rohit Sharma (6 Articles)</h4>
+              <p>Merged coverage from ESPNcricinfo, BBC Sport, Cricbuzz, Wisden, Reuters, Indian Express.</p>
+            </div>
+            <div class="mock-card" style="border-left: 4px solid var(--accent-blue);">
+              <h4>Story 2: IPL 2025 Mega Auction &amp; RTM Rules (6 Articles)</h4>
+              <p>Merged coverage on retention rules, Right to Match cards, and purse limits.</p>
+            </div>
+            <div class="mock-card" style="border-left: 4px solid var(--accent-amber);">
+              <h4>Story 3: Ashes 5th Test Finale at The Oval (6 Articles)</h4>
+              <p>Merged reports on Broad's fairytale final wicket and series 2-2 draw.</p>
+            </div>
+          </div>
+        </div>
+        <div class="annotation-box" style="top: 250px; left: 320px;">
+          📈 <span>Annotation: Silhouette 0.542 &bull; Optimal Cluster Cohesion</span>
+        </div>
+      </section>
+
+      <!-- FRAME 3: AI Intelligence Briefing -->
+      <section class="screen-frame" id="frame-3">
+        <div class="app-mock-header">
+          <div class="app-title-group">
+            <h2>Tab 3: AI Intelligence Briefing &amp; MMR Synthesizer</h2>
+            <p>Cross-document redundancy elimination with source citations</p>
+          </div>
+        </div>
+        <div class="app-tabs-bar">
+          <span class="tab-item">📰 1. News Feed</span>
+          <span class="tab-item">🌳 2. Story Clusters</span>
+          <span class="tab-item active">📝 3. AI Briefing</span>
+          <span class="tab-item">📊 4. Analytics</span>
+          <span class="tab-item">💾 5. Data Export</span>
+        </div>
+        <div class="screen-body">
+          <div class="mock-sidebar">
+            <div class="sidebar-widget">
+              <label>Engine</label>
+              <div class="mock-input">Extractive MMR (Graph)</div>
+            </div>
+            <div class="sidebar-widget">
+              <label>Lambda (Relevance vs Diversity)</label>
+              <div class="mock-input">λ = 0.65</div>
+            </div>
+            <div class="sidebar-widget">
+              <label>Compression Metric</label>
+              <div style="font-size: 1.3rem; color: var(--pitch-green); font-weight:800;">84.4%</div>
+            </div>
+          </div>
+          <div class="mock-main-content">
+            <div class="mock-card" style="background: rgba(0,210,106,0.05);">
+              <h4>Synthesized Executive Briefing: IPL Mega Auction Rules</h4>
+              <ul style="padding-left: 20px; font-size: 0.88rem; line-height: 1.6; color: #f1f5f9;">
+                <li>BCCI officially permits franchises to retain up to six players via retention or Right to Match (RTM).</li>
+                <li>Overall team auction purse expanded to INR 120 crore for the 2025 season.</li>
+                <li>Maximum cap of 5 capped players and minimum 1 uncapped player mandated.</li>
+                <li>Impact Player rule retained through the 2027 cycle after broadcaster consultations.</li>
+              </ul>
+            </div>
+            <div class="mock-card">
+              <h4 style="font-size: 0.85rem; color: var(--accent-blue);">🔗 Verifiable Citations (3 Outlets)</h4>
+              <p style="font-size: 0.78rem;">Sources cited: Cricbuzz (Vijay Tagore), The Indian Express (Devendra Pandey), Wisden Cricket.</p>
+            </div>
+          </div>
+        </div>
+        <div class="annotation-box" style="top: 210px; right: 60px;">
+          💡 <span>Annotation: 84.4% Compression &bull; Duplicate Quotes Eliminated</span>
+        </div>
+      </section>
+
+      <!-- FRAME 4: News Analytics -->
+      <section class="screen-frame" id="frame-4">
+        <div class="app-mock-header">
+          <div class="app-title-group">
+            <h2>Tab 4: Interactive News Analytics (Plotly)</h2>
+            <p>Tournament distribution, player mentions &amp; publication timeline</p>
+          </div>
+        </div>
+        <div class="app-tabs-bar">
+          <span class="tab-item">📰 1. News Feed</span>
+          <span class="tab-item">🌳 2. Story Clusters</span>
+          <span class="tab-item">📝 3. AI Briefing</span>
+          <span class="tab-item active">📊 4. Analytics</span>
+          <span class="tab-item">💾 5. Data Export</span>
+        </div>
+        <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 20px; height: 380px;">
+          <div class="mock-card" style="align-items: center; justify-content: center; text-align: center;">
+            <h4 style="width: 100%; text-align: left;">Tournament Coverage Proportion</h4>
+            <div style="width: 180px; height: 180px; border-radius: 50%; border: 18px solid var(--pitch-green); border-top-color: var(--accent-blue); border-right-color: var(--accent-amber); margin: 20px 0;"></div>
+            <div style="font-size: 0.8rem; color: var(--text-muted);">T20 World Cup (31%) &bull; IPL (28%) &bull; Ashes (21%)</div>
+          </div>
+          <div class="mock-card">
+            <h4>Top Player Mentions in Corpus</h4>
+            <div style="display: flex; flex-direction: column; gap: 10px; margin-top: 14px;">
+              <div>Rohit Sharma <div style="width: 90%; height: 8px; background: var(--pitch-green); border-radius: 4px;"></div></div>
+              <div>Jasprit Bumrah <div style="width: 75%; height: 8px; background: var(--accent-blue); border-radius: 4px;"></div></div>
+              <div>Hardik Pandya <div style="width: 60%; height: 8px; background: var(--accent-amber); border-radius: 4px;"></div></div>
+              <div>Stuart Broad <div style="width: 45%; height: 8px; background: #a855f7; border-radius: 4px;"></div></div>
+            </div>
+          </div>
+        </div>
+        <div class="annotation-box" style="bottom: 120px; left: 380px;">
+          📊 <span>Annotation: Plotly Interactive Visualizations &bull; Pitch Dark Theme</span>
+        </div>
+      </section>
+
+      <!-- FRAME 5: GitHub & Submission -->
+      <section class="screen-frame" id="frame-5">
+        <div class="app-mock-header">
+          <div class="app-title-group">
+            <h2>GitHub Repository &amp; Faculty Collaborator Access</h2>
+            <p>All source code, input data, intermediate &amp; output data committed</p>
+          </div>
+        </div>
+        <div class="mock-card" style="margin-top: 10px; border: 1px solid var(--pitch-green);">
+          <h4>📦 Project Repository: <code>cricintel-ai</code></h4>
+          <p>Collaborator Access Granted to: <strong style="color: var(--pitch-green);">gundimedavenugopal</strong></p>
+          <div style="font-family: var(--font-mono); font-size: 0.82rem; color: var(--accent-blue); margin: 12px 0;">
+            ├── cricintel/ (Source Code: ingestion, clustering, summarization, analytics)<br>
+            ├── data/sample_cricket_news.json (Input Data: 39 articles)<br>
+            ├── data/output/ (Intermediate Embeddings &amp; Output Briefings)<br>
+            ├── docs/ (Architecture, Evaluation Report, Viva Preparation)<br>
+            └── presentation/ (Slide Deck &amp; Demo Video Simulator)
+          </div>
+          <div style="color: #fff; font-size: 0.9rem; font-weight: 700;">Ready for Cabin CB618 Evaluation (10 Marks Demo + 15 Marks Dossier)</div>
+        </div>
+        <div class="annotation-box" style="top: 180px; right: 100px;">
+          🤝 <span>Annotation: Collaborator Added: gundimedavenugopal</span>
+        </div>
+      </section>
+
+      <!-- Subtitles Overlay -->
+      <div class="subtitles-overlay" id="subtitles">
+        <strong>[00:00]</strong> Welcome to CricIntel AI — Cricket News Intelligence System for ATSMA LAB.
+      </div>
+
+    </div>
+
+    <!-- Controls Panel -->
+    <div class="controls-panel">
+      <div class="timeline-scrubber" id="scrubber" onclick="seekTimeline(event)">
+        <div class="timeline-progress" id="progress"></div>
+      </div>
+      <div class="control-row">
+        <div class="btn-group">
+          <button class="sim-btn primary" id="playBtn" onclick="togglePlay()">▶ Play Demo</button>
+          <button class="sim-btn" onclick="prevSegment()">◄ Step Back</button>
+          <button class="sim-btn" onclick="nextSegment()">Step Forward ►</button>
+          <button class="sim-btn" id="voiceBtn" onclick="toggleVoice()">🔊 Voice: ON</button>
+        </div>
+        <div class="time-readout" id="timeDisplay">Segment 1 / 6 &bull; 00:00</div>
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    const segments = [
+      {
+        frameId: 'frame-0',
+        time: '00:00 - 00:25',
+        sub: '[00:00] Welcome to CricIntel AI — Cricket News Intelligence System for ATSMA LAB. Grouping cricket dispatches and synthesizing briefings.',
+        voice: 'Welcome to CricIntel AI, an autonomous multi-article text summarization and semantic clustering system developed for ATSMA laboratory.'
+      },
+      {
+        frameId: 'frame-1',
+        time: '00:25 - 00:55',
+        sub: '[00:25] Tab 1: Live News Feed with dual-tier ingestion: 39-article curated benchmark plus live RSS failover.',
+        voice: 'In Tab 1, we ingest multi-source cricket dispatches. Our domain preprocessor strips wire prefixes and extracts player and tournament entities.'
+      },
+      {
+        frameId: 'frame-2',
+        time: '00:55 - 01:35',
+        sub: '[00:55] Tab 2: Story Clusters via Agglomerative Hierarchical Clustering (Cosine Cutoff 0.65). Silhouette Score: 0.542.',
+        voice: 'In Tab 2, Agglomerative Hierarchical Clustering groups articles using cosine distance, achieving a Silhouette Score of 0.542 across the 7 ground-truth stories.'
+      },
+      {
+        frameId: 'frame-3',
+        time: '01:35 - 02:15',
+        sub: '[01:35] Tab 3: AI Intelligence Briefing using Maximal Marginal Relevance (MMR) with 84.4% compression and citations.',
+        voice: 'Tab 3 generates the AI Intelligence Briefing. Maximal Marginal Relevance suppresses redundant quotes, compressing articles by 84% with full source attribution.'
+      },
+      {
+        frameId: 'frame-4',
+        time: '02:15 - 02:50',
+        sub: '[02:15] Tab 4: Interactive News Analytics built with Plotly. Tournament distributions, player mentions, and timeline.',
+        voice: 'Tab 4 renders macro trends with Plotly: tournament breakdown donuts, top player mention bars, and publication scatter timelines.'
+      },
+      {
+        frameId: 'frame-5',
+        time: '02:50 - 03:30',
+        sub: '[02:50] GitHub project created with source code, intermediate embeddings, output briefings. Collaborator: gundimedavenugopal.',
+        voice: 'All source code, input data, intermediate embeddings, and output briefings are saved in GitHub. Collaborator access is granted to Dr. Gundimeda Venugopal.'
+      }
+    ];
+
+    let currentSegment = 0;
+    let isPlaying = false;
+    let playTimer = null;
+    let voiceEnabled = true;
+
+    function renderSegment(index) {
+      currentSegment = Math.max(0, Math.min(index, segments.length - 1));
+      const seg = segments[currentSegment];
+
+      document.querySelectorAll('.screen-frame').forEach(f => f.classList.remove('active'));
+      const activeFrame = document.getElementById(seg.frameId);
+      if (activeFrame) activeFrame.classList.add('active');
+
+      document.getElementById('subtitles').innerHTML = `<strong>[${seg.time.split(' - ')[0]}]</strong> ${seg.sub}`;
+      document.getElementById('timeDisplay').textContent = `Segment ${currentSegment + 1} / ${segments.length} • ${seg.time}`;
+      document.getElementById('progress').style.width = `${((currentSegment + 1) / segments.length) * 100}%`;
+
+      if (voiceEnabled && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+        const utterance = new SpeechSynthesisUtterance(seg.voice);
+        utterance.rate = 1.0;
+        utterance.pitch = 1.0;
+        window.speechSynthesis.speak(utterance);
+      }
+    }
+
+    function togglePlay() {
+      isPlaying = !isPlaying;
+      const playBtn = document.getElementById('playBtn');
+      if (isPlaying) {
+        playBtn.textContent = '⏸ Pause Demo';
+        playTimer = setInterval(() => {
+          if (currentSegment < segments.length - 1) {
+            renderSegment(currentSegment + 1);
+          } else {
+            togglePlay();
+          }
+        }, 9000);
+      } else {
+        playBtn.textContent = '▶ Play Demo';
+        clearInterval(playTimer);
+        if ('speechSynthesis' in window) window.speechSynthesis.cancel();
+      }
+    }
+
+    function nextSegment() {
+      if (currentSegment < segments.length - 1) {
+        renderSegment(currentSegment + 1);
+      }
+    }
+
+    function prevSegment() {
+      if (currentSegment > 0) {
+        renderSegment(currentSegment - 1);
+      }
+    }
+
+    function toggleVoice() {
+      voiceEnabled = !voiceEnabled;
+      document.getElementById('voiceBtn').textContent = voiceEnabled ? '🔊 Voice: ON' : '🔇 Voice: OFF';
+      if (!voiceEnabled && 'speechSynthesis' in window) {
+        window.speechSynthesis.cancel();
+      }
+    }
+
+    function seekTimeline(e) {
+      const rect = e.currentTarget.getBoundingClientRect();
+      const clickX = e.clientX - rect.left;
+      const ratio = clickX / rect.width;
+      const targetIndex = Math.floor(ratio * segments.length);
+      renderSegment(targetIndex);
+    }
+
+    // Initialize
+    renderSegment(0);
+  </script>
+</body>
+</html>
